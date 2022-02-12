@@ -1,0 +1,426 @@
+.clearfix {
+  clear: both; }
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 100%; }
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+  color: #1a1a1a;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  height: 3500px;
+  max-width: 100%; }
+
+aside
+.part {
+  width: 90%;
+  height: 7%;
+  display: flex;
+  display: inline-block;
+  margin: 10px;
+  text-transform: capitalize; }
+  aside
+  .part select {
+    width: 100%;
+    text-align: center;
+    background-color: #26b889;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 5px;
+    color: black; }
+    aside
+    .part select option {
+      background-color: #5e5e5e;
+      color: mintcream;
+      border: none;
+      outline: none; }
+
+section {
+  float: left;
+  width: 68%;
+  padding: 10px 10px;
+  margin-left: 20px; }
+  section ul {
+    text-align: center;
+    margin: 5px;
+    padding: 10px 10px; }
+    section ul li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 3px solid #05a081;
+      padding: 5px;
+      cursor: pointer; }
+      section ul li:hover {
+        background-color: #05a081; }
+      section ul li.acive {
+        background-color: #05a081; }
+  section h5 {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #05a081;
+    width: 21%;
+    height: fit-content;
+    font-size: 25px;
+    font-family: inherit;
+    color: #fff;
+    letter-spacing: 1px;
+    transform: translatex(380px);
+    border-radius: 20px;
+    text-transform: capitalize; }
+  section .container {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px; }
+    section .container .box {
+      width: 32%;
+      height: 350px;
+      margin-bottom: 10px;
+      position: relative;
+      box-shadow: 10px 10px 10px #ccc; }
+      section .container .box img {
+        width: 100%;
+        height: 100%; }
+      section .container .box .salary {
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 25px;
+        opacity: 0;
+        color: green; }
+        section .container .box .salary:hover {
+          opacity: 1; }
+        section .container .box .salary i {
+          cursor: pointer; }
+          section .container .box .salary i:hover {
+            color: red; }
+
+article {
+  width: 100%;
+  padding: 10px 10px; }
+  article h5 {
+    text-align: center;
+    padding: 10px 10px;
+    width: 21%;
+    height: fit-content;
+    font-size: 30px;
+    font-family: inherit;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    transform: translateX(550px);
+    padding: 20px; }
+    article h5 span {
+      color: #05a081; }
+  article .conainerr {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 600px; }
+    article .conainerr .boxteam {
+      width: 22%;
+      box-shadow: 10px 10px 10px #ccc; }
+      article .conainerr .boxteam img {
+        width: 100%;
+        height: 50%; }
+      article .conainerr .boxteam .info {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        article .conainerr .boxteam .info h6 {
+          font-size: 25px;
+          padding: 10px 10px;
+          font-family: monospace;
+          font-weight: bolder;
+          color: black; }
+        article .conainerr .boxteam .info p {
+          font-size: 20px;
+          padding: 10px 10px;
+          color: #5e5e5e; }
+        article .conainerr .boxteam .info a {
+          font-size: 25px;
+          padding: 10px 10px;
+          color: #05a081; }
+          article .conainerr .boxteam .info a:hover {
+            color: green; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  padding: 5px;
+  position: static;
+  z-index: 300;
+  background-color: #232a34; }
+  header .logo {
+    position: absolute;
+    left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+    background-color: mintcream; }
+    header .logo img {
+      width: 70px;
+      height: 70px; }
+    header .logo h1 {
+      font-size: 25px;
+      color: black;
+      letter-spacing: 2px;
+      transform: translateX(-30px); }
+      header .logo h1 span {
+        font-size: 40px;
+        color: #05a081; }
+  header .links {
+    width: 40%;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 320px; }
+    header .links ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: flex-end; }
+      header .links ul li {
+        display: inline-block; }
+        header .links ul li a {
+          color: white;
+          padding: 10px 10px;
+          font-family: 'FontAwesome';
+          font-size: 25px; }
+          header .links ul li a.active {
+            color: #ccc; }
+          header .links ul li a:hover {
+            color: #ccc; }
+  header .icon {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    color: #05a081; }
+    header .icon i {
+      cursor: pointer; }
+      header .icon i:hover {
+        color: #406257; }
+
+main {
+  width: 100%;
+  height: 665px;
+  position: relative;
+  background-color: mintcream;
+  margin-bottom: 10px; }
+  main img {
+    width: 100%;
+    height: 90%;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain; }
+  main h4 {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bold;
+    color: mintcream;
+    text-transform: capitalize; }
+  main .trans {
+    position: absolute;
+    left: 490px;
+    top: 300px;
+    width: 550px;
+    height: 60px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    main .trans input {
+      width: 480px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      text-align: start;
+      font-size: 25px;
+      padding: 10px 10px; }
+    main .trans i {
+      font-size: 30px;
+      padding-top: 5px; }
+  main p {
+    padding: 10px 10px;
+    color: #5e5e5e;
+    font-size: 20px; }
+    main p span {
+      color: #05a081; }
+
+aside {
+  width: 30%;
+  padding: 10px 10px;
+  float: left;
+  overflow: auto;
+  height: 750px; }
+  aside i {
+    font-size: 30px;
+    color: #05a081;
+    transform: translatey(50px); }
+  aside .head {
+    font-size: 40px;
+    padding: 10px 10px;
+    color: #05a081;
+    text-transform: capitalize;
+    transform: translateX(20px);
+    height: 15%;
+    width: 50%;
+    margin-bottom: 20px; }
+  aside form {
+    border: 1px solid black;
+    width: 90%;
+    height: 43%;
+    padding: 10px 10px;
+    margin: 100px auto;
+    background-color: #5e5e5e;
+    box-shadow: 10px 10px 10px #ccc; }
+    aside form p {
+      text-align: center;
+      font-size: 30px;
+      color: #05a081;
+      font-family: fantasy;
+      text-transform: capitalize;
+      padding: 10px 10px; }
+    aside form input {
+      width: 92%;
+      border-radius: 5px;
+      font-size: 25px;
+      padding: 10px 10px;
+      margin: 10px;
+      border: none;
+      outline: none; }
+    aside form button {
+      width: 200px;
+      padding: 10px 10px;
+      height: 50px;
+      background-color: #05a081;
+      margin-top: 20px;
+      transform: translateX(65px);
+      color: mintcream;
+      font-size: 25px;
+      border-radius: 50px;
+      border: none; }
+      aside form button:hover {
+        background-color: #a0058b; }
+
+footer {
+  width: 100%;
+  margin-top: 10px; }
+  footer h5 {
+    text-align: center;
+    padding: 10px 10px;
+    width: 21%;
+    height: fit-content;
+    font-size: 30px;
+    font-family: inherit;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    transform: translateX(550px);
+    padding: 20px;
+    box-shadow: 10px 10px 10px #ccc; }
+  footer .my-photo {
+    width: 500px;
+    padding: 10px 10px;
+    transform: translateX(470px);
+    margin: 5px; }
+    footer .my-photo img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      transform: translateX(110px);
+      filter: blur(2px); }
+      footer .my-photo img:hover {
+        filter: blur(0); }
+    footer .my-photo h6 {
+      text-align: center;
+      padding: 10px 10px;
+      height: fit-content;
+      font-size: 35px;
+      font-family: inherit;
+      color: #05a081;
+      text-transform: capitalize; }
+  footer .my-info {
+    width: 100%;
+    background-color: black;
+    color: mintcream;
+    text-transform: capitalize;
+    font-size: 20px;
+    position: relative;
+    height: 300px; }
+    footer .my-info .one {
+      padding: 10px 10px;
+      width: 40%; }
+      footer .my-info .one h6 {
+        padding: 10px 10px;
+        height: fit-content;
+        font-size: 35px;
+        font-family: inherit; }
+      footer .my-info .one ul {
+        display: inline-block;
+        cursor: pointer; }
+        footer .my-info .one ul li {
+          padding: 10px 10px; }
+          footer .my-info .one ul li span {
+            color: #5e5e5e; }
+            footer .my-info .one ul li span:hover {
+              color: mintcream; }
+    footer .my-info .media {
+      position: absolute;
+      top: 1px;
+      right: 10px;
+      height: 99%;
+      padding: 10px 10px;
+      color: #ccc;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column; }
+      footer .my-info .media i {
+        padding: 10px 10px;
+        cursor: pointer;
+        color: gray;
+        font-size: 25px; }
+        footer .my-info .media i:hover {
+          color: mintcream;
+          transform: translateX(-5px); }
+
+/*# sourceMappingURL=main.css.map */

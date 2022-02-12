@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../main.scss"
+	],
+	"sourcesContent": [
+		".links{\r\n    width:90%;\r\n    background-color:blue;\r\n    ul{\r\n      color: white;\r\n    }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,MAAM,CAAA;EACF,KAAK,EAAC,GAAG;EACT,gBAAgB,EAAC,IAAI;CAIxB;;;AAND,AAGI,MAHE,CAGF,EAAE,CAAA;EACA,KAAK,EAAE,KAAK;CACb"
+}

@@ -1,0 +1,322 @@
+@import "D:/courses/frontend/ourproject/_sassfile.scss/_variables.scss";
+@import "D:/courses/frontend/ourproject/_sassfile.scss/_mixins.scss";
+@import "D:/courses/frontend/ourproject/_sassfile.scss/_helpers.scss";
+header{
+   display: $disflex;
+    flex-direction: $flexdir;
+    justify-content: space-between;
+    width: $max-width;
+    height: $nav-height;
+    padding:5px;
+//   position:fixed;
+position: static;
+  z-index: 300;
+    background-color: $scolor;
+    .logo{
+        position: absolute;
+        left: 150px;
+        display: $disflex;
+        flex-direction: $flexdir;
+        justify-content: space-evenly;
+        width: 20%;
+        background-color:mintcream;
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        h1{
+            font-size: $mainfont;
+            color: $footercolor;
+            letter-spacing: 2px;
+            transform: translateX(-30px);
+            span{
+                font-size: $mainfont + 15px;
+                color: $bcolor;
+            }
+        }
+    }
+    .links{
+        width: 40%;
+        padding: $mainpadding;
+        text-transform: capitalize;
+        height: 50px;
+        position: absolute;
+        top: 25px;
+        right: 320px;
+
+                ul{
+            width: $max-width;
+            display: $disflex;
+            flex-direction: $flexdir;
+            justify-content: space-between;
+            align-content:flex-end;
+            li{
+                display: inline-block;
+                a{
+                    color: $bodycolor;
+                    padding: $mainpadding;
+                    font-family: 'FontAwesome';
+                    font-size: 25px;
+                    &.active{
+                        color: #ccc;
+                        // border-bottom: 3px solid $bcolor;
+                    }
+                    &:hover{
+                        color: #ccc;
+                    }   
+                }
+            }
+        }
+    }
+    .icon{
+        width: 200px;
+        height: 80px;
+        position: absolute;
+        right: 20px;
+        display: $disflex;
+        flex-direction: $flexdir;
+        justify-content: space-around;
+        align-items: center;
+        font-size: $mainfont;
+        color: $bcolor;
+        
+        i{
+            cursor: pointer;
+            &:hover{
+                color:#406257;
+            }
+        }
+        
+    }
+    
+}
+main{
+    width:$max-width;
+    height: 665px;
+    position: $mainposition;
+     background-color:mintcream;
+     margin-bottom: 10px;
+     img{
+         width: $max-width;
+         height: 90%;
+         background-repeat: repeat;
+         background-position: center;
+         background-size: contain;
+     }
+     h4{
+         position: absolute;
+         top: 200px;
+         left: 500px;
+         font-size: 40px;
+         font-family: monospace;
+         font-weight: bold;
+         color: mintcream;
+         text-transform: capitalize;
+     }
+     .trans{
+         position: absolute;
+         left: 490px;
+         top: 300px;
+         width: 550px;
+         height:60px;
+         padding: $mainpadding;
+         display: $disflex;
+         flex-direction: $flexdir;
+         justify-content: space-evenly;
+         input{
+            width: 480px;
+                height: 50px;
+                border-radius: 10px;
+                border:none;
+                outline: none;
+                text-align: start;
+                font-size: $mainfont;
+                padding: $mainpadding;
+            
+        }
+        i{
+            font-size: 30px;
+            padding-top: 5px;
+        }
+     }
+     p{
+         padding: $mainpadding;
+         color: $graycolor;
+         font-size: 20px;
+         span{
+             color:$bcolor;
+         }
+     }
+}
+aside{
+    width: 30%;
+    padding: $mainpadding;
+    // border: $mainborder;
+    // position: fixed;
+    float: $mainfloat;
+    overflow: auto;
+    height: 750px;
+    i{
+        font-size: 30px;
+        color: $bcolor;
+        transform: translatey(50px);
+    }
+    .head{
+        font-size: 40px;
+        padding: $mainpadding;
+        color: $bcolor;
+        text-transform: capitalize;
+        transform: translateX(20px);
+        height: 15%;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    form{
+            border: $mainborder;
+            width: 90%;
+            height: 43%;
+            padding: $mainpadding;
+            margin: 100px auto;
+            background-color: $graycolor;
+            box-shadow: $box;
+            p{
+                text-align: center;
+                font-size: 30px;
+                color: #05a081;
+                font-family: fantasy;
+                text-transform: capitalize;
+                padding: $mainpadding;
+            }
+            input{
+              width: 92%;
+            //   height: 20px;
+                border-radius: 5px;
+                font-size: $mainfont;
+                padding: $mainpadding;
+                margin: 10px;
+                border: none;
+                outline: none;
+            }
+            button{
+                width: 200px;
+                padding: $mainpadding;
+                height: 50px;
+                background-color: $bcolor;
+                margin-top: 20px;
+                transform: translateX(65px);
+                color: $maincolor;
+                font-size: $mainfont;
+                border-radius: 50px;
+                border: none;
+                &:hover{
+                    background-color: #a0058b;
+                }
+
+            }
+    }
+}
+footer{
+    width: $max-width;
+    margin-top: 10px;
+    h5{
+        text-align: center;
+        padding: $mainpadding;
+        width: 21%;
+        height:fit-content;
+        font-size: $mainfont + 5px;
+        font-family: inherit;
+        color: $footercolor;
+        letter-spacing: 1px;
+        border-radius: 20px;
+        text-transform: capitalize;
+        transform: translateX(550px);
+        padding: 20px;
+        box-shadow: $box;
+    }
+    .my-photo{
+        width: 500px;
+        padding: $mainpadding;
+        transform: translateX(470px);
+        margin: 5px;
+       
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            transform: translateX(110px);
+            filter: blur(2px);
+            &:hover{
+                filter: blur(0);
+            }
+        }
+        h6{
+            text-align: center;
+            padding: $mainpadding;
+            height:fit-content;
+            font-size: $mainfont +10px ;
+            font-family: inherit;
+            color: $bcolor;
+            text-transform: capitalize;
+           
+        }
+    }
+    .my-info{
+        width: $max-width;
+        background-color: $footercolor;
+        color: $maincolor;
+        text-transform: capitalize;
+        font-size: $mainfont - 5px;
+        position: $mainposition;
+        height: 300px;
+        .one{
+            padding: $mainpadding;
+           width: 40%;
+           h6{
+            padding: $mainpadding;
+            height:fit-content;
+            font-size: $mainfont +10px ;
+            font-family: inherit;
+           }
+           ul {
+               display: inline-block;
+               cursor: pointer;
+               li{
+                   padding: $mainpadding;
+                   span{
+                    color: $graycolor;
+                    &:hover{
+                        color: $maincolor;
+                    }
+                   }
+
+               }
+           }
+        }
+        .media{
+           position: absolute;
+           top: 1px;
+           right: 10px;
+           height: 99%;
+           padding: $mainpadding;
+            color: #ccc;
+            display: $disflex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            i{
+                padding: $mainpadding;
+                cursor: pointer;
+                color: gray;
+                font-size: $mainfont;
+                &:hover{
+                    color: $maincolor;
+                    transform: translateX(-5px);
+                }
+            }
+
+
+        }
+    }
+}
+
+
+

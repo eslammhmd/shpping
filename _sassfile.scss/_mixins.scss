@@ -1,0 +1,16 @@
+// if you want
+%cover{
+@mixin prefixer ( $prop , $value , $prefixes:(webkit moz o ms)){
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $prop} :$value;
+    }
+    #{$prop} : $value;
+}
+// call box shadow by @include prefixer (box-hsadow , 10px 10px 10px #ccc , $prefixes);
+// call box-sixing  @include prefixer (box-sizing , border-box , $prefixes);
+// call animation  @include prefixer (fadeleft , 1s infinite ease-in-out , $prefixes);
+}
+// call by %cover
+.clearfix{
+    clear: both;
+}

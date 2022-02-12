@@ -1,0 +1,204 @@
+// الحاجه ال انت مش عايزها تروح هناك حطها هنا في % ونادي عليها ب %+name
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: $max-width;
+
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+    color: #1a1a1a;
+    background-color:$bodycolor;
+    transition: $maintransition;
+    height: 3500px;
+    max-width: $max-width;
+}
+aside 
+.part{
+  width: 90%;
+  height: 7%;
+  display: $disflex;
+  display: inline-block;
+  margin: 10px;
+  text-transform: capitalize;
+  select{
+    width: 100%;
+    text-align: center;
+    background-color:#26b889;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 5px;
+    color: $footercolor;
+
+  
+    option{
+      background-color: $graycolor;
+      color: $maincolor;
+      border: none;
+      outline: none;
+    }
+  }
+
+}
+section{
+  float: $mainfloat;
+  width: 68%;
+  padding: $mainpadding;
+  // min-height: 2000px;
+  // border: $mainborder;
+  margin-left: 20px;
+  ul{
+    text-align: center;
+    margin: 5px;
+    padding: $mainpadding;
+    li{
+   display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 3px solid $bcolor;
+      padding: 5px;
+      cursor: pointer;
+      &:hover{
+        background-color: $bcolor;
+      }
+      &.acive{
+        background-color: $bcolor;
+      }
+    }
+  }
+  h5{
+    text-align: center;
+    padding: $mainpadding;
+    background-color: $bcolor;
+    width: 21%;
+    height:fit-content;
+    font-size: $mainfont;
+    font-family: inherit;
+    color: #fff;
+    letter-spacing: 1px;
+    transform: translatex(380px);
+    border-radius: 20px;
+    text-transform: capitalize;
+  }
+  .container{
+                width: $max-width;
+                // border: $mainborder;
+                margin-top: 5px;
+                display: $disflex;
+                flex-direction: $flexdir;
+                flex-wrap: $flexwr;
+                justify-content: space-evenly;
+                margin-top: 10px;
+                .box{
+                  width: 32%;
+                  height: 350px;
+                  // border: $mainborder;
+                  margin-bottom: 10px;
+                  position: $mainposition;
+                  box-shadow: $box;
+                  img{
+                    width: $max-width;
+                    height: $max-height;
+                  }
+                  .salary{
+                    width: 100%;
+                    height: 30%;
+                    position: absolute;
+                    // border: $mainborder;
+                    bottom: 5px;
+                    display: $disflex;
+                    flex-direction: $flexdir;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    font-size: $mainfont;
+                    opacity: 0;
+                    color: green;
+                   
+                    &:hover{
+                      opacity: 1;
+                    }
+                    i{
+                      cursor: pointer;
+                      &:hover{
+                        color: red;
+                      }
+                    }
+                  }
+                }
+  }
+  
+}
+article{
+  width: $max-width;
+  padding: $mainpadding;
+  // border: $mainborder;
+  h5{
+    text-align: center;
+    padding: $mainpadding;
+    width: 21%;
+    height:fit-content;
+    font-size: $mainfont + 5px;
+    font-family: inherit;
+    color: $footercolor;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    transform: translateX(550px);
+    padding: 20px;
+    span{
+      color: $bcolor;
+    }
+  }
+  .conainerr{
+    width: $max-width;
+    padding: $mainpadding;
+    display: $disflex;
+    flex-direction: $flexdir;
+    justify-content: space-evenly;
+    height: 600px;
+    .boxteam{
+      width: 22%;
+      box-shadow: $box;
+      img{
+        width: 100%;
+        height: 50%;
+      }
+      .info{
+        padding: $mainpadding;
+        display: $disflex;
+        flex-direction: column;
+        justify-content: space-between;
+        h6{
+          font-size: $mainfont;
+          padding: $mainpadding;
+          font-family: monospace;
+          font-weight: bolder;
+          color: $footercolor;
+        }
+        p{
+          font-size: $mainfont - 5px;
+          padding: $mainpadding;
+          color: $graycolor;
+        }
+        a{
+          font-size: $mainfont;
+          padding: $mainpadding;
+          color: $bcolor;
+          &:hover{
+            color: green;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
